@@ -1,3 +1,9 @@
+@media only screen and (max-width: 600px) {
+    .MuiButton-root {
+        display: none;
+    }
+}
+
 .MuiLinearProgress-root {
     background-color: #26571f;
     height: 3px;
@@ -5,10 +11,14 @@
 
 .MuiLinearProgress-bar {
     background-color: #479d39;
+    margin: auto;
+    width: 100%;
 }
 
 .MuiMobileStepper-positionStatic {
     background-color: #00000000;
+    justify-content: center;
+    align-content: center;
 }
 
 .MuiPaper-elevation0 {

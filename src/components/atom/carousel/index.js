@@ -24,54 +24,48 @@ const images = [
         label: 'Pulse API',
         imgPath:
             '/pulseapi.png',
-        info: 'An API for a GP appointment booking system.',
+        info: 'An API for a GP appointment booking system. Designed to work with a React front end.',
     },
     {
         label: 'Portfolio',
         imgPath:
-            '/pulseapi.png',
+            '/portfolio.png',
         info: 'This portfolio. Made using Gatsby.',
     },
     {
         label: 'UK Income Tax Calculator',
         imgPath:
-            '/pulseapi.png',
+            '/taxcalc.png',
         info: 'Some info about the project',
     },
     {
         label: 'Transformers Information Application',
         imgPath:
-            '/pulseapi.png',
+            '/transformers.png',
         info: 'Designed and built using an MVC design pattern.',
     },
     {
         label: 'iO Academy Portal',
         imgPath:
-            '/pulseapi.png',
+            '/ioportal.png',
         info: 'Designed and built using an MVC design pattern. Using SLIM framework',
     },
     {
         label: 'Night of the Living Dev',
         imgPath:
-            '/pulseapi.png',
+            '/nightdev.png',
         info: 'Whack-a-mole style game build in pure JS as part of a scrum team.',
-    },
-    {
-        label: 'Magic: The Gathering Collectors App',
-        imgPath:
-            '/pulseapi.png',
-        info: 'Proof of concept CRUD app for tracking MTG cards.',
     },
     {
         label: 'iO Academy Aptitude Test',
         imgPath:
-            '/pulseapi.png',
+            '/apttest.png',
         info: 'Worked as part of a scrum team to rebuild the existing academy test in React.',
     },
     {
         label: 'Solar System SVG Animation',
         imgPath:
-            '/pulseapi.png',
+            '/solar.png',
         info: 'A solar system animation built using CSS.',
     },
 ];
@@ -94,86 +88,98 @@ function Carousel() {
     };
 
     return (
-        <CacheProvider value={cache}>
-            <Box sx={{ width: "75vw", flexGrow: 1}}>
-                <Paper
-                    square
-                    elevation={0}
-                    sx={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        height: "4rem",
-                    }}
-                >
-                    <Typography className="project-title">{images[activeStep].label}</Typography>
-                </Paper>
-                <Paper
-                    square
-                    elevation={0}
-                    sx={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        height: "2rem",
-                    }}
-                >
-                    <Typography className="project-info">{images[activeStep].info}</Typography>
-                </Paper>
-                <div className="project-divider"> </div>
-                <AutoPlaySwipeableViews
-                    axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-                    index={activeStep}
-                    onChangeIndex={handleStepChange}
-                    interval={10000}
-                    enableMouseEvents
-                >
-                    {images.map((step, index) => (
-                        <div key={step.label}>
-                            {Math.abs(activeStep - index) <= 2 ? (
-                                <Box
-                                    component="img"
-                                    sx={{
-                                        display: 'block',
-                                        maxWidth: "100%",
-                                        overflow: 'hidden',
-                                        width: '100%',
-                                    }}
-                                    src={step.imgPath}
-                                    alt={step.label}
-                                />
-                            ) : null}
-                        </div>
-                    ))}
-                </AutoPlaySwipeableViews>
-                    <MobileStepper
-                        variant="progress"
-                        steps={maxSteps}
-                        position="static"
-                        activeStep={activeStep}
-                        nextButton={
-                            <Button
-                                size="large"
-                                onClick={handleNext}
-                                disabled={activeStep === maxSteps - 1}
-                            >
-                                {theme.direction === 'rtl' ? (
-                                    <BiLeftArrow />
-                                ) : (
-                                    <BiRightArrow />
-                                )}
-                            </Button>
-                        }
-                        backButton={
-                            <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
-                                {theme.direction === 'rtl' ? (
-                                    <BiRightArrow />
-                                ) : (
-                                    <BiLeftArrow />
-                                )}
-                            </Button>
-                        }
-                    />
-            </Box>
-        </CacheProvider>
+                <CacheProvider value={cache}>
+                    <Button
+                        size="large"
+                        onClick={handleBack}
+                        disabled={activeStep === 0}
+                        sx={{
+                             left: '1%',
+                             top: '5%',
+                        }}
+                    >
+                        {theme.direction === 'rtl' ? (
+                            <BiRightArrow />
+                        ) : (
+                            <BiLeftArrow />
+                        )}
+                    </Button>
+                    <Box sx={{ width: "75vw", flexGrow: 1}}>
+                        <Paper
+                            square
+                            elevation={0}
+                            sx={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                height: "4rem",
+                            }}
+                        >
+                            <Typography className="project-title">{images[activeStep].label}</Typography>
+                        </Paper>
+                        <Paper
+                            square
+                            elevation={0}
+                            sx={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                height: "2rem",
+                            }}
+                        >
+                            <Typography className="project-info">{images[activeStep].info}</Typography>
+                        </Paper>
+                        <div className="project-divider"> </div>
+                        <AutoPlaySwipeableViews
+                            axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
+                            index={activeStep}
+                            onChangeIndex={handleStepChange}
+                            interval={10000}
+                            enableMouseEvents
+                        >
+                            {images.map((step, index) => (
+                                <div key={step.label}>
+                                    {Math.abs(activeStep - index) <= 2 ? (
+                                        <Box
+                                            component="img"
+                                            sx={{
+                                                display: 'block',
+                                                margin: 'auto',
+                                                marginBottom: '0',
+                                                maxWidth: "90%",
+                                                overflow: 'hidden',
+                                                width: '90%',
+                                            }}
+                                            src={step.imgPath}
+                                            alt={step.label}
+                                        />
+                                    ) : null}
+                                </div>
+                            ))}
+                        </AutoPlaySwipeableViews>
+                            <MobileStepper
+                                variant="progress"
+                                steps={maxSteps}
+                                position="static"
+                                activeStep={activeStep}
+                                nextButton={null}
+                                backButton={null}
+                            />
+                    </Box>
+                    <Button
+                        size="large"
+                        sx={{
+                            right: '1%',
+                            top: '5%',
+                        }}
+                        onClick={handleNext}
+                        disabled={activeStep === maxSteps - 1}
+                    >
+                        {theme.direction === 'rtl' ? (
+                            <BiLeftArrow />
+                        ) : (
+                            <BiRightArrow />
+                        )}
+                    </Button>
+                </CacheProvider>
     );
 }
 
