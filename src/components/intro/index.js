@@ -16,7 +16,7 @@ const Intro = (handleIntro) => {
                 steps={['I make websites', 1000, 'I make APIs', 1000, 'I design things', 1000, 'I solve problems', 1000]}
                 wrapper="p"
                 loop={Infinity}
-                className="start-hidden"
+                className="start-hidden sub-intro"
             />
         </div>
     )
