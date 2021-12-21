@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #000;
+    font-family: 'VT323', monospace;
+}
+
+.start-hidden {
+    display: none;
+    margin: 0;
+}

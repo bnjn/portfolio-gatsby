@@ -1,0 +1,13 @@
+.intro-container {
+    width: 95vw;
+    height: 95vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #479d39;
+    font-size: 4rem;
+    font-family: 'VT323', monospace;
+    /*border: #479d39 dashed 2px;*/
+}

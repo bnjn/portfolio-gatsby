@@ -1,0 +1,8 @@
+.projects-container {
+    width: 75vw;
+    height: 95vh;
+    align-items: center;
+    justify-content: center;
+    /*border: #479d39 dashed 2px;*/
+    margin: 7rem auto auto;
+}

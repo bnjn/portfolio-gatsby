@@ -1,0 +1,14 @@
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 50%;
+    bottom: 2%;
+    margin-top: -2rem;
+    margin-left: -2rem;
+}
+
+.down-arrow {
+    color: #479d39;
+    font-size: 4rem;
+}

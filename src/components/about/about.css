@@ -1,0 +1,16 @@
+.about-container {
+    width: 75vw;
+    height: 95vh;
+    margin: 7rem auto auto;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #479d39;
+    /*border: #479d39 dashed 2px;*/
+}
+
+.about {
+    font-size: 2rem;
+    /*width: 75%;*/
+    border: #479d39 dashed 2px;
+    padding: 1rem;
+}
