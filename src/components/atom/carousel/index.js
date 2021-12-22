@@ -11,14 +11,13 @@ import { BiLeftArrow, BiRightArrow } from "react-icons/all";
 import { CacheProvider } from '@emotion/react';
 import createCache from '@emotion/cache';
 import './carousel.css';
-import {Icon, SvgIcon} from "@mui/material";
+import { SvgIcon} from "@mui/material";
 import {
         SiJavascript,
         SiPhp,
         SiReact,
         SiHtml5,
         SiCss3,
-        SiGit,
         SiGatsby,
         SiExpress,
         SiMongodb,
