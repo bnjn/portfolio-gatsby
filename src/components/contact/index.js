@@ -5,8 +5,8 @@ const Contact = () => {
 
     const links = {
         github: "https://github.com/bnjn/",
-        linkedin: "",
-        cv: ""
+        linkedin: "https://www.linkedin.com/in/bnjn/",
+        cv: "https://drive.google.com/file/d/1uChickWYW2EQP4qAoWmSZVpjsMcVjlk1/view?usp=sharing"
     }
 
     return (
