@@ -1,64 +1,19 @@
 @media only screen and (max-width: 600px) {
-    .MuiButton-root {
-        display: none;
+    .carousel-container {
+        margin-top: 13rem !important;
+        width: 90% !important;
     }
 }
 
-.MuiLinearProgress-root {
-    background-color: #26571f;
-    height: 3px;
+@media only screen and (max-height: 800px) {
+    .carousel-container {
+        margin-top: 11rem !important;
+    }
 }
 
-.MuiLinearProgress-bar {
-    background-color: #479d39;
-    width: 100%;
+.carousel-container {
+    display: flex;
+    flex-direction: row;
+    margin: 4rem 2rem 2rem;
+    width: 60%;
 }
-
-.MuiMobileStepper-positionStatic {
-    background-color: #00000000;
-    justify-content: center;
-    align-content: center;
-    margin: 0.5rem auto auto;
-}
-
-.MuiPaper-elevation0 {
-    background-color: #00000000;
-}
-
-.MuiTypography-root {
-    font-family: 'VT323', monospace;
-}
-
-.MuiTypography-body1 {
-    color: #479d39 !important;
-    font-size: 2rem;
-}
-
-.project-info {
-    font-size: 1.5rem;
-    padding-top: 2rem;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
-    border-bottom: #479d39 dashed 2px;
-
-}
-
-.project-title {
-    border-bottom: #479d39 dashed 2px;
-}
-
-.project-divider {
-    height: 2px;
-    width: 100%;
-    margin-bottom: 1.4rem;
-}
-
-.MuiButton-text {
-    color: #479d39;
-    font-size: 1.5rem;
-}
-
-.Mui-disabled {
-    color: #132d10 !important;
-}
-/*MuiButton-textButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButtonBase-root   css-1knaqv7-MuiButtonBase-root-MuiButton-root*/

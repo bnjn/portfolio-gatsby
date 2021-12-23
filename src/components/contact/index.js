@@ -2,11 +2,18 @@ import * as React from "react";
 import './contact.css';
 
 const Contact = () => {
+
+    const links = {
+        github: "https://github.com/bnjn/",
+        linkedin: "",
+        cv: ""
+    }
+
     return (
-        <div className='nav start-hidden contact-container'>
-            <button type="button" name="button">LinkedIn</button>
-            <button type="button" name="button">GitHub</button>
-            <button type="button" name="button">Download CV</button>
+        <div className='start-hidden contact-container'>
+            <a target="_blank" rel="noreferrer" href={links.github}>GitHub</a>
+            <a target="_blank" rel="noreferrer" href={links.linkedin}>LinkedIn</a>
+            <a target="_blank" rel="noreferrer" href={links.cv}>Get CV</a>
         </div>
     )
 }

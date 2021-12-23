@@ -1,7 +1,7 @@
 .intro-container {
     width: 95vw;
     height: 95vh;
-    margin: auto;
+    margin: 1.5rem auto 1.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
