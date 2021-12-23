@@ -5,6 +5,7 @@ import About from "../components/about";
 import Contact from "../components/contact";
 import DownArrow from "../components/atom/downarrow";
 import Footer from "../components/atom/footer";
+import {Helmet} from "react-helmet";
 
 const IndexPage = () => {
 
@@ -21,6 +22,10 @@ const IndexPage = () => {
 
   return (
       <div>
+          <Helmet>
+              <meta ref="/favicon.ico" name="icon" />
+              <title>bnjn_</title>
+          </Helmet>
           <Intro className='section'
            handleIntro={handleIntro}/>
           <div className="arrow-container">

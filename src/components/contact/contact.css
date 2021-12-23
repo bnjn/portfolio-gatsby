@@ -1,6 +1,13 @@
+@media only screen and (max-width: 600px) {
+    .contact-container {
+        font-size: 1.5rem !important;
+    }
+}
+
 .contact-container {
     margin: auto;
-    justify-content: center;
+    margin-bottom: 1rem;
+    justify-content: space-around;
     align-items: center;
     /*border: #479d39 dashed 2px;*/
     display: -webkit-box;
@@ -10,34 +17,25 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    font-size: 8rem;
-    width: 95vw;
-}
-
-.contact-container button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    background-color: #FFFFFF00;
-    color: #479d39;
-    border: 4px solid #479d39;
-    border-radius: 5px;
-    width: 30%;
-    height: 3rem;
-    margin: 5vw;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-shadow: 5px 5px #00000080;
-    box-shadow: 5px 5px #00000080;
-    font-family: 'VT323', monospace;
     font-size: 2rem;
+    width: 93vw;
 }
 
-.nav button:hover {
-    background-color: #479d39;
-    color: #000000;
-    border-color: #2d6225;
+.contact-container a {
+    text-decoration: none;
+    color: #479d39;
+    border-radius: 10px;
+    border: #479d39 solid 3px;
+    padding: 0.4rem;
+}
+
+.contact-container a:visited {
+    text-decoration: none;
+    color: #479d39;
+}
+
+.contact-container a:hover {
+    text-decoration: none;
+    color: #35732c;
+    border: #35732c dashed 3px;
 }
